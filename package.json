@@ -1,0 +1,46 @@
+{
+  "name": "algorithms-learning",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "_diff@3.5.0@diff": "^3.5.0",
+    "_arg@4.1.0@arg": "^4.1.0",
+    "_buffer-from@1.1.1@buffer-from": "^1.1.1",
+    "_ts-node@8.0.3@ts-node": "^8.0.3",
+    "_make-error@1.3.5@make-error": "^1.3.5",
+    "_typescript@3.4.1@typescript": "^3.4.1",
+    "_source-map@0.6.1@source-map": "^0.6.1",
+    "_source-map-support@0.5.11@source-map-support": "^0.5.11",
+    "_yn@3.0.0@yn": "^3.0.0",
+    "arg": "^4.1.0",
+    "buffer-from": "^1.1.1",
+    "diff": "^3.5.0",
+    "make-error": "^1.3.5",
+    "source-map": "^0.6.1",
+    "source-map-support": "^0.5.11",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.1",
+    "yn": "^3.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chijitui/algorithms-learning.git"
+  },
+  "author": "chijitui <johnxiao675@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chijitui/algorithms-learning/issues"
+  },
+  "homepage": "https://github.com/chijitui/algorithms-learning#readme"
+}
