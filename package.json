@@ -1,0 +1,26 @@
+{
+  "name": "algorithms-learning",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chijitui/algorithms-learning.git"
+  },
+  "author": "chijitui <johnxiao675@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chijitui/algorithms-learning/issues"
+  },
+  "homepage": "https://github.com/chijitui/algorithms-learning#readme",
+  "devDependencies": {
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.1"
+  }
+}
