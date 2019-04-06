@@ -1,4 +1,13 @@
-const binarySearch = (arr: number[], target: number) => {
+const averageFloor = (num1: number, num2: number): number => {
+  return Math.floor((num1 + num2) / 2);
+};
+
+/**
+ * 二分查找
+ * @param arr - 有序数组
+ * @param target - 目标数字
+ */
+const binarySearch = (arr: number[], target: number) :number => {
   let low = 0;
   let high = arr.length - 1;
   let current = averageFloor(low, high);
@@ -19,13 +28,9 @@ const binarySearch = (arr: number[], target: number) => {
   }
 
   return current;
-}
+};
 
-const averageFloor = (num1: number, num2: number) => {
-  return Math.floor((num1 + num2) / 2);
-}
-
-const testArr = [1, 5, 6, 8, 9, 11];
+const testArr: number[] = [1, 5, 6, 8, 9, 11];
 
 console.log(binarySearch(testArr, 9)); // 4
 console.log(binarySearch(testArr, 2)); // -1
