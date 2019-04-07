@@ -1,13 +1,12 @@
 const findCriticalIndex = (arr: number[], order: boolean = true): number => {
 
   if (arr.length === 0) {
-    return -1
+    return -1;
   }
 
   let critical_index = 0;
   
   for (let index = 1; index < arr.length; index++) {
-
     const isSave = order ? (arr[critical_index] > arr[index]) : (arr[critical_index] < arr[index]);
 
     if (isSave) {
