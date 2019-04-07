@@ -9,7 +9,7 @@ interface Box {
  * @desc 盒子里有盒子，而盒子里的盒子又有盒子，🔑 放在某个盒子中，找到 🔑 并返回对应盒子的 id，不存在返回 -1
  * @param root - 初始化盒子
  */
-const findBox = (root: Box) => {
+const findBox = (root: Box): number => {
   for (let child of root.children) {
     if (child.isTarget) {
       return child.id;
@@ -18,7 +18,7 @@ const findBox = (root: Box) => {
     }
   }
   return -1;
-}
+};
 
 const testRoot = {
   id: 0,
