@@ -38,4 +38,4 @@ const testRoot = {
   }],
 };
 
-console.log(findBox(testRoot));
+console.log(findBox(testRoot)); // 4
