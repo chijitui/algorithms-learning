@@ -1,4 +1,5 @@
 const isInterger = (length: number, width: number): boolean => {
+
   return (length > 0
     && width > 0
     && length % 1 === 0
