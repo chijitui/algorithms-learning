@@ -43,4 +43,4 @@ const testProductList = [
   { name: 'iphone', cell: 2000, weight: 1 },
 ];
 
-console.log(packageMaxValue(testProductList, 4)); // 3500
+console.log(packageMaxValue(testProductList, 4)); // 4000
