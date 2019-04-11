@@ -10,17 +10,15 @@ const getLessCostNode = (cost: Map<string, number>): { name: string, cost: numbe
 
 /**
  * 求最短路径
- * @desc 使用 dijkstra 算法在全部路径为正权重的图中，查找起始节点到各节点的最短路径。
- *
+ * @desc 使用 dijkstra 算法在全部路径为正权重的图中，查找起始节点到各节点的最短路径
  * @param relationGraph - 关系图
  * @param start - 起始节点
- *
- * @return result - 关系图
  */
 const dijkstraLessCost = (relationGraph: Map<string, { name: string; cost: number; }[]>, start: string): Map<string, number> => {
   const cost = new Map();
   const result = new Map();
   const relationKeysIter = relationGraph.keys();
+
   let relationGraphSize = relationGraph.size;
 
   while (relationGraphSize > 0) {
