@@ -10,22 +10,25 @@ const packageMaxValue = (productList: { name: string, cell: number, weight: numb
   }
 
   const bagMatrix: number[][] = [];
-  const weightMaxIndex = maxWeight - 1;
+  const weightMaxIndex = maxWeight;
   const productMaxIndex = productList.length - 1;
 
   for (let w = 0; w <= weightMaxIndex; w++) {
-    const realW = w + 1;
 
     bagMatrix[w] = [];
     for (let i = 0; i <= productMaxIndex; i++) {
       const product = productList[i];
 
-      if (realW <= product.weight) {
+      if (w === 0) {
+        bagMatrix[w][i] = 0;
+        continue;
+      }
+      if (w < product.weight) {
         bagMatrix[w][i] = bagMatrix[w][i - 1] || 0;
         continue;
       }
       const lastValue = bagMatrix[w][i - 1] || 0;
-      const surplusSpaceValue = bagMatrix[realW - product.weight][i - 1] || 0;
+      const surplusSpaceValue = bagMatrix[w - product.weight][i - 1] || 0;
 
       bagMatrix[w][i] = Math.max(surplusSpaceValue + product.cell, lastValue);
     }
@@ -37,6 +40,7 @@ const testProductList = [
   { name: 'guitar', cell: 1500, weight: 1 },
   { name: 'Hi-fi', cell: 3000, weight: 4 },
   { name: 'laptop', cell: 2000, weight: 3 },
+  { name: 'iphone', cell: 2000, weight: 1 },
 ];
 
-console.log(packageMaxValue(testProductList, 4));
+console.log(packageMaxValue(testProductList, 4)); // 3500
