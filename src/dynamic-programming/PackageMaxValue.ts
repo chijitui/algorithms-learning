@@ -41,6 +41,7 @@ const testProductList = [
   { name: 'Hi-fi', cell: 3000, weight: 4 },
   { name: 'laptop', cell: 2000, weight: 3 },
   { name: 'iphone', cell: 2000, weight: 1 },
+  { name: 'mp3', cell: 1000, weight: 1 },
 ];
 
-console.log(packageMaxValue(testProductList, 4)); // 4000
+console.log(packageMaxValue(testProductList, 4)); // 4500
